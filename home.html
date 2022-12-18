@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+  <title>Nizom's Portfolio</title>
+  <style>
+    /* CSS styles go here */
+    body {
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    }   
+    .a {
+    color: #007bff;
+    }
+    .profile-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .profile-image {
+    width: 100%;
+    height: 400px;
+    border-radius: 4px 4px 0 0;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    }
+    .profile-image.show {
+      opacity: 1;
+    }
+    .profile-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    .profile-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 20px;
+    }
+    .profile-bio {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    }
+    .profile-social-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    }
+    .profile-social-links li {
+    display: inline-block;
+    margin-right: 10px;
+    }
+    .profile-social-links li a {
+    display: block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.2s ease-in-out;
+    }
+    .profile-social-links li a:hover {
+    background-color: #23c57f;
+    }
+    nav {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    }
+    nav ul li {
+    margin-right: 20px;
+    }
+    nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    }
+    nav ul li a:hover {
+    color: #fff;
+    background-color: #23c57f;
+    }
+  </style>
+</head>
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Personal Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<body>
+  <div class="profile-container">
+    <div class="profile-image profile-picture" style="background-image: url('/Users/nizomdjuraev/Desktop/Projects/Portfolio/profile.jpg');"></div>
+    <h1 class="profile-name">Nizom Djuraev</h1>
+        <h2 class="profile-title">Web Developer</h2>
+        <p class="profile-bio">I am a web developer with experience building modern, responsive websites and applications. I have a strong background in front-end development, but I also have experience working with back-end technologies such as Node.js and Express. In my free time, I enjoy learning new technologies and staying up-to-date with the latest web development trends.
+        </p>
+        <ul class="profile-social-links">
+        <li><a href="https://github.com/NizomDjuraev" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/nizom-djuraev-07ba13154/" target="_blank">LinkedIn</a></li>
+        </ul>
+        
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const profileImage = document.querySelector('.profile-image');
+        profileImage.classList.add('show');
+    });
+</script>
+</html>
